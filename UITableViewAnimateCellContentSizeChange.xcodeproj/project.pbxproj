@@ -14,6 +14,30 @@
 		F7506A0222DA1FBF00EB4779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7506A0022DA1FBF00EB4779 /* LaunchScreen.storyboard */; };
 		F7506A0D22DA1FBF00EB4779 /* UITableViewAnimateCellContentSizeChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A0C22DA1FBF00EB4779 /* UITableViewAnimateCellContentSizeChangeTests.swift */; };
 		F7506A1822DA1FC000EB4779 /* UITableViewAnimateCellContentSizeChangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A1722DA1FC000EB4779 /* UITableViewAnimateCellContentSizeChangeUITests.swift */; };
+		F7506A2722DA206B00EB4779 /* VCWithTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2622DA206B00EB4779 /* VCWithTableView.swift */; };
+		F7506A2822DA206B00EB4779 /* VCWithTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2622DA206B00EB4779 /* VCWithTableView.swift */; };
+		F7506A2922DA206B00EB4779 /* VCWithTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2622DA206B00EB4779 /* VCWithTableView.swift */; };
+		F7506A2B22DA27C300EB4779 /* ChangingContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2A22DA27C300EB4779 /* ChangingContentTableViewCell.swift */; };
+		F7506A2C22DA27C300EB4779 /* ChangingContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2A22DA27C300EB4779 /* ChangingContentTableViewCell.swift */; };
+		F7506A2D22DA27C300EB4779 /* ChangingContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2A22DA27C300EB4779 /* ChangingContentTableViewCell.swift */; };
+		F7506A3022DA3A7700EB4779 /* TableCellBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2F22DA3A7700EB4779 /* TableCellBaseViewModel.swift */; };
+		F7506A3122DA3A7700EB4779 /* TableCellBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2F22DA3A7700EB4779 /* TableCellBaseViewModel.swift */; };
+		F7506A3222DA3A7700EB4779 /* TableCellBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A2F22DA3A7700EB4779 /* TableCellBaseViewModel.swift */; };
+		F7506A3722DA3C7000EB4779 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A3522DA3C7000EB4779 /* HeaderCell.swift */; };
+		F7506A3822DA3C7000EB4779 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A3522DA3C7000EB4779 /* HeaderCell.swift */; };
+		F7506A3922DA3C7000EB4779 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A3522DA3C7000EB4779 /* HeaderCell.swift */; };
+		F7506A3A22DA3C7000EB4779 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7506A3622DA3C7000EB4779 /* HeaderCell.xib */; };
+		F7506A3B22DA3C7000EB4779 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7506A3622DA3C7000EB4779 /* HeaderCell.xib */; };
+		F7506A3C22DA3C7000EB4779 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7506A3622DA3C7000EB4779 /* HeaderCell.xib */; };
+		F7506A3E22DA3D9800EB4779 /* NonVanilaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A3D22DA3D9800EB4779 /* NonVanilaViewController.swift */; };
+		F7506A3F22DA3D9800EB4779 /* NonVanilaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A3D22DA3D9800EB4779 /* NonVanilaViewController.swift */; };
+		F7506A4022DA3D9800EB4779 /* NonVanilaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7506A3D22DA3D9800EB4779 /* NonVanilaViewController.swift */; };
+		F7F45B6B22DA42EE00338386 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F45B6A22DA42EE00338386 /* Enums.swift */; };
+		F7F45B6C22DA42EE00338386 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F45B6A22DA42EE00338386 /* Enums.swift */; };
+		F7F45B6D22DA42EE00338386 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F45B6A22DA42EE00338386 /* Enums.swift */; };
+		F7F45B6F22DA595200338386 /* HeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F45B6E22DA595200338386 /* HeaderCellViewModel.swift */; };
+		F7F45B7022DA595200338386 /* HeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F45B6E22DA595200338386 /* HeaderCellViewModel.swift */; };
+		F7F45B7122DA595200338386 /* HeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F45B6E22DA595200338386 /* HeaderCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +71,14 @@
 		F7506A1322DA1FBF00EB4779 /* UITableViewAnimateCellContentSizeChangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewAnimateCellContentSizeChangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7506A1722DA1FC000EB4779 /* UITableViewAnimateCellContentSizeChangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewAnimateCellContentSizeChangeUITests.swift; sourceTree = "<group>"; };
 		F7506A1922DA1FC000EB4779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7506A2622DA206B00EB4779 /* VCWithTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithTableView.swift; sourceTree = "<group>"; };
+		F7506A2A22DA27C300EB4779 /* ChangingContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingContentTableViewCell.swift; sourceTree = "<group>"; };
+		F7506A2F22DA3A7700EB4779 /* TableCellBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellBaseViewModel.swift; sourceTree = "<group>"; };
+		F7506A3522DA3C7000EB4779 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		F7506A3622DA3C7000EB4779 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		F7506A3D22DA3D9800EB4779 /* NonVanilaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonVanilaViewController.swift; sourceTree = "<group>"; };
+		F7F45B6A22DA42EE00338386 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F7F45B6E22DA595200338386 /* HeaderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +129,8 @@
 		F75069F622DA1FB600EB4779 /* UITableViewAnimateCellContentSizeChange */ = {
 			isa = PBXGroup;
 			children = (
+				F7506A2E22DA3A0400EB4779 /* ViewModelProtocol */,
+				F7506A2522DA1FDC00EB4779 /* Vanila */,
 				F75069F722DA1FB600EB4779 /* AppDelegate.swift */,
 				F75069F922DA1FB600EB4779 /* ViewController.swift */,
 				F75069FB22DA1FB600EB4779 /* Main.storyboard */,
@@ -123,6 +157,44 @@
 				F7506A1922DA1FC000EB4779 /* Info.plist */,
 			);
 			path = UITableViewAnimateCellContentSizeChangeUITests;
+			sourceTree = "<group>";
+		};
+		F7506A2522DA1FDC00EB4779 /* Vanila */ = {
+			isa = PBXGroup;
+			children = (
+				F7506A2622DA206B00EB4779 /* VCWithTableView.swift */,
+				F7506A2A22DA27C300EB4779 /* ChangingContentTableViewCell.swift */,
+			);
+			path = Vanila;
+			sourceTree = "<group>";
+		};
+		F7506A2E22DA3A0400EB4779 /* ViewModelProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				F7506A3422DA3C4B00EB4779 /* BottomCell */,
+				F7506A3322DA3C3200EB4779 /* HeaderCell */,
+				F7506A2F22DA3A7700EB4779 /* TableCellBaseViewModel.swift */,
+				F7506A3D22DA3D9800EB4779 /* NonVanilaViewController.swift */,
+				F7F45B6A22DA42EE00338386 /* Enums.swift */,
+			);
+			path = ViewModelProtocol;
+			sourceTree = "<group>";
+		};
+		F7506A3322DA3C3200EB4779 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				F7506A3522DA3C7000EB4779 /* HeaderCell.swift */,
+				F7506A3622DA3C7000EB4779 /* HeaderCell.xib */,
+				F7F45B6E22DA595200338386 /* HeaderCellViewModel.swift */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		F7506A3422DA3C4B00EB4779 /* BottomCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BottomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7506A3A22DA3C7000EB4779 /* HeaderCell.xib in Resources */,
 				F7506A0222DA1FBF00EB4779 /* LaunchScreen.storyboard in Resources */,
 				F75069FF22DA1FBF00EB4779 /* Assets.xcassets in Resources */,
 				F75069FD22DA1FB600EB4779 /* Main.storyboard in Resources */,
@@ -239,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7506A3B22DA3C7000EB4779 /* HeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7506A3C22DA3C7000EB4779 /* HeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +332,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75069FA22DA1FB600EB4779 /* ViewController.swift in Sources */,
+				F7506A3E22DA3D9800EB4779 /* NonVanilaViewController.swift in Sources */,
+				F7506A2722DA206B00EB4779 /* VCWithTableView.swift in Sources */,
+				F7506A2B22DA27C300EB4779 /* ChangingContentTableViewCell.swift in Sources */,
+				F7506A3022DA3A7700EB4779 /* TableCellBaseViewModel.swift in Sources */,
+				F7506A3722DA3C7000EB4779 /* HeaderCell.swift in Sources */,
+				F7F45B6B22DA42EE00338386 /* Enums.swift in Sources */,
 				F75069F822DA1FB600EB4779 /* AppDelegate.swift in Sources */,
+				F7F45B6F22DA595200338386 /* HeaderCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7506A2822DA206B00EB4779 /* VCWithTableView.swift in Sources */,
+				F7F45B7022DA595200338386 /* HeaderCellViewModel.swift in Sources */,
+				F7506A3F22DA3D9800EB4779 /* NonVanilaViewController.swift in Sources */,
+				F7506A3822DA3C7000EB4779 /* HeaderCell.swift in Sources */,
+				F7506A2C22DA27C300EB4779 /* ChangingContentTableViewCell.swift in Sources */,
+				F7F45B6C22DA42EE00338386 /* Enums.swift in Sources */,
+				F7506A3122DA3A7700EB4779 /* TableCellBaseViewModel.swift in Sources */,
 				F7506A0D22DA1FBF00EB4779 /* UITableViewAnimateCellContentSizeChangeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7506A2922DA206B00EB4779 /* VCWithTableView.swift in Sources */,
+				F7F45B7122DA595200338386 /* HeaderCellViewModel.swift in Sources */,
+				F7506A4022DA3D9800EB4779 /* NonVanilaViewController.swift in Sources */,
+				F7506A3922DA3C7000EB4779 /* HeaderCell.swift in Sources */,
+				F7506A2D22DA27C300EB4779 /* ChangingContentTableViewCell.swift in Sources */,
+				F7F45B6D22DA42EE00338386 /* Enums.swift in Sources */,
+				F7506A3222DA3A7700EB4779 /* TableCellBaseViewModel.swift in Sources */,
 				F7506A1822DA1FC000EB4779 /* UITableViewAnimateCellContentSizeChangeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
