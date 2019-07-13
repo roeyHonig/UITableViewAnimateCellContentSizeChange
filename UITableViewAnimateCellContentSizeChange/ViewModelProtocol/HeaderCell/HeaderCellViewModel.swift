@@ -9,33 +9,27 @@
 import UIKit
 
 class HeaderCellViewModel: TableCellBaseViewModel {
-   
-    var changingContentHeightConstraintConstant: CGFloat?
     
-    var showContent: Bool?
+    var changingContentHeightConstraintConstant: CGFloat
+    var showContent: Bool
+    var isToggeling: Bool
+    var tableView: UITableView
     
-    var isToggeling: Bool?
-    
-    var tableView: UITableView?
-    
-    func setInitialData() {
-        if changingContentHeightConstraintConstant == nil {
-            changingContentHeightConstraintConstant = 240
-        }
-        
-        if showContent == nil {
-            showContent = true
-        }
-        
-        if isToggeling == nil {
-            isToggeling = false
-        }
-        
+    init(withTableView tableView: UITableView ) {
+        self.tableView = tableView
+        self.showContent = true
+        self.isToggeling = false
+        self.changingContentHeightConstraintConstant = 240
     }
-   
+    
     func getMyCellType() -> TableViewCellType {
         return .header
     }
+    
+    func getToggelingDuration() -> TimeInterval {
+        return 3
+    }
+    
     
     
 

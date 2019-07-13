@@ -18,13 +18,14 @@ class HeaderCell: UITableViewCell {
         
         print("toggleing")
         viewModel.isToggeling = true
+        let animationDuration = viewModel.getToggelingDuration()
        
-        if viewModel.showContent! {
+        if viewModel.showContent {
             // animate to close
-            UIView.animate(withDuration: 3, animations: {
-                self.viewModel.tableView!.beginUpdates()
+            UIView.animate(withDuration: animationDuration, animations: {
+                self.viewModel.tableView.beginUpdates()
                 self.animatingViewHeightConstraint.constant = 20
-                self.viewModel.tableView!.endUpdates()
+                self.viewModel.tableView.endUpdates()
             }) { (finish) in
                 self.viewModel.isToggeling = false
                 self.viewModel.showContent = false
@@ -32,10 +33,10 @@ class HeaderCell: UITableViewCell {
             }
         } else {
             // animate to open
-            UIView.animate(withDuration: 3, animations: {
-                self.viewModel.tableView!.beginUpdates()
+            UIView.animate(withDuration: animationDuration, animations: {
+                self.viewModel.tableView.beginUpdates()
                 self.animatingViewHeightConstraint.constant = 240
-                self.viewModel.tableView!.endUpdates()
+                self.viewModel.tableView.endUpdates()
             }) { (finish) in
                 self.viewModel.isToggeling = false
                 self.viewModel.showContent = true
@@ -58,12 +59,12 @@ class HeaderCell: UITableViewCell {
     }
     
     func fillCellData() {
-        animatingViewHeightConstraint.constant = viewModel.changingContentHeightConstraintConstant!
+        animatingViewHeightConstraint.constant = viewModel.changingContentHeightConstraintConstant
     }
     
     @objc func animatingViewWasTapped() {
         print("view was pressed")
-        if !(viewModel.isToggeling!) {
+        if !viewModel.isToggeling {
             toggleContent()
         }
  

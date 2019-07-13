@@ -11,11 +11,11 @@ import UIKit
 
 protocol TableCellBaseViewModel {
     
-    var showContent: Bool? {get set}
-    var isToggeling: Bool? {get set}
-    var tableView: UITableView? {get set}
+    var showContent: Bool {get set}
+    var isToggeling: Bool {get set}
+    var tableView: UITableView {get set}
     
-    func setInitialData()
     func getMyCellType() -> TableViewCellType
+    func getToggelingDuration() -> TimeInterval
 }
 

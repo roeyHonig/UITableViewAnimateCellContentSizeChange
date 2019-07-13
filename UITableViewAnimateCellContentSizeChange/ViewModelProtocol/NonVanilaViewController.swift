@@ -12,9 +12,8 @@ class NonVanilaViewController: UIViewController, UITableViewDelegate, UITableVie
     
 
     @IBOutlet weak var tableView: UITableView!
-    // TableView Data Source
-    var tableViewDataSource: [TableCellBaseViewModel] = [HeaderCellViewModel(),HeaderCellViewModel(), HeaderCellViewModel(), HeaderCellViewModel(), HeaderCellViewModel(), HeaderCellViewModel(), HeaderCellViewModel(), HeaderCellViewModel()]
-   
+    var tableViewDataSource: [TableCellBaseViewModel]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,6 +24,10 @@ class NonVanilaViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // register cells
         tableView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "HeaderCell")
+        
+        // TableView Data Source
+        tableViewDataSource = [HeaderCellViewModel(withTableView: tableView), HeaderCellViewModel(withTableView: tableView), HeaderCellViewModel(withTableView: tableView), HeaderCellViewModel(withTableView: tableView), HeaderCellViewModel(withTableView: tableView), HeaderCellViewModel(withTableView: tableView), HeaderCellViewModel(withTableView: tableView), HeaderCellViewModel(withTableView: tableView)]
+        
         
     }
     
@@ -39,15 +42,12 @@ class NonVanilaViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func getCell(forTableView tableView: UITableView, andIndexPath indexPath: IndexPath) -> UITableViewCell {
-        var element = tableViewDataSource[indexPath.row]
-        element.tableView = tableView
+        let element = tableViewDataSource[indexPath.row]
         switch element.getMyCellType() {
         case .header:
             let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell") as! HeaderCell
             cell.viewModel = (element as! HeaderCellViewModel)
-            cell.viewModel.setInitialData()
             cell.fillCellData()
-         
             return cell
         case .bottom:
             return UITableViewCell()
