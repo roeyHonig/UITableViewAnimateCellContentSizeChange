@@ -11,6 +11,7 @@ import UIKit
 class HeaderCellViewModel: TableCellBaseViewModel {
     
     var changingContentHeightConstraintConstant: CGFloat
+    var arrowImagaeRotationAngle: CGFloat
     var showContent: Bool
     var isToggeling: Bool
     var tableView: UITableView
@@ -20,6 +21,7 @@ class HeaderCellViewModel: TableCellBaseViewModel {
         self.showContent = true
         self.isToggeling = false
         self.changingContentHeightConstraintConstant = 240
+        self.arrowImagaeRotationAngle = CGFloat.pi * 0
     }
     
     func getMyCellType() -> TableViewCellType {
@@ -27,7 +29,7 @@ class HeaderCellViewModel: TableCellBaseViewModel {
     }
     
     func getToggelingDuration() -> TimeInterval {
-        return 3
+        return 0.4
     }
     
     
